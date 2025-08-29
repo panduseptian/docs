@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Xignature Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -15,35 +15,7 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
+            "pages": ["index", "quickstart", "upgrade"]
           }
         ]
       },
@@ -52,17 +24,41 @@
         "groups": [
           {
             "group": "API documentation",
+            "pages": ["api-reference/introduction"]
+          },
+          {
+            "group": "Authentication",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/endpoint/authentication/registration",
+              "api-reference/endpoint/authentication/check-user",
+              "api-reference/endpoint/authentication/gen-pat",
+              "api-reference/endpoint/authentication/check-pat"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Hash Sign",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/endpoint/sign/hash",
+              "api-reference/endpoint/sign/hash_ent"
+            ]
+          },
+          {
+            "group": "Certificate",
+            "pages": ["api-reference/endpoint/certificate/active"]
+          },
+          {
+            "group": "Emeterai",
+            "pages": [
+              "api-reference/endpoint/emeterai/generate",
+              "api-reference/endpoint/emeterai/qr"
+            ]
+          },
+          {
+            "group": "Stamp Document",
+            "pages": [
+              "api-reference/endpoint/stamp/single",
+              "api-reference/endpoint/stamp/multi",
+              "api-reference/endpoint/stamp/emeterai"
             ]
           }
         ]
@@ -71,57 +67,43 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Our Website",
+          "href": "https://xignature.co.id",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://blog.xignature.co.id/",
           "icon": "newspaper"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@xignature.co.id"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }

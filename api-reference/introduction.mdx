@@ -1,33 +1,33 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "Introduction"
+description: "This section provides a complete reference for all available API endpoints. Use this guide to understand the various operations you can perform, including creating, retrieving, updating, and deleting resources."
 ---
-
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Xignature Open API is a service that implements a remote sign system. In this service Xignature will not accept client's document to be signed. We will only receive the Hash value sent by the client and return it in the form of a digital signature that has been signed on behalf of the signer.
+The figure below is an explanation of the system topology applied to Open API.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+![title](/images/flow.png)
+
+## Base URL
+
+```bash Staging
+https://api.xignature.dev/v3/
+```
+
+```bash Production
+https://api.xignature.co.id/v3/
+```
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+All API endpoints are authenticated using `api-key` header and picked up from the specification file.
 
 ```json
 "security": [
   {
-    "bearerAuth": []
+    "api-key": ""
   }
 ]
 ```

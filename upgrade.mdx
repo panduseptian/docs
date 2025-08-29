@@ -1,0 +1,26 @@
+---
+title: "Upgrade From Version 1"
+description: "Upgrade your sign gateway from version 1"
+---
+
+```bash Staging
+# Remove Current Container
+docker rm -f sign-gateway
+
+# Pull New Image
+docker pull registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
+
+# Run Container With New Image
+docker run -d --name sign-gateway -p 1303:1303 -e API_URL=https://api.xignature.dev -e API_KEY=your-api-key -e ENV=STAGING registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
+```
+
+```bash Production
+# Remove Current Container
+docker rm -f sign-gateway
+
+# Pull New Image
+docker pull registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
+
+# Run Container With New Image
+docker run -d --name sign-gateway -p 1303:1303 -e API_URL=https://api.xignature.co.id -e API_KEY=your-api-key -e ENV=PROD registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
+```
