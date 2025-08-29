@@ -54,7 +54,7 @@
             ]
           },
           {
-            "group": "Stamp Document",
+            "group": "Stamp Document (On Premise)",
             "pages": [
               "api-reference/endpoint/stamp/single",
               "api-reference/endpoint/stamp/multi",
