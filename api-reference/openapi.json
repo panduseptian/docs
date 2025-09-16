@@ -227,9 +227,6 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "returnActivationUrl": {
-                    "type": "boolean"
-                  },
                   "nik": {
                     "type": "string",
                     "format": "utc-millisec"
@@ -258,7 +255,6 @@
                 }
               },
               "example": {
-                "returnActivationUrl": true,
                 "nik": "3175032508940005",
                 "fullname": "Pandu Septian Gumilar",
                 "email": "pandu.septian18@xignature.co.id",
@@ -492,9 +488,6 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "returnActivationUrl": {
-                    "type": "boolean"
-                  },
                   "nik": {
                     "type": "string",
                     "format": "utc-millisec"
@@ -526,7 +519,6 @@
                 }
               },
               "example": {
-                "returnActivationUrl": false,
                 "nik": "3175032508930005",
                 "fullname": "Pandu Septian Gumilar",
                 "email": "pandu.septian1888@xignature.co.id",
