@@ -11,7 +11,7 @@ docker rm -f sign-gateway
 docker pull registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
 
 # Run Container With New Image
-docker run -d --name sign-gateway -p 1303:1303 -e API_URL=https://api.xignature.dev -e API_KEY=your-api-key -e ENV=STAGING registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
+docker run -d --name sign-gateway -p 1303:1303 -e API_URL=https://api.xignature.dev -e API_KEY=your-api-key -e ENV=STAGING -e OTEL_SERVICE_NAME=xignature-dev registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
 ```
 
 ```bash Production
@@ -22,5 +22,5 @@ docker rm -f sign-gateway
 docker pull registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
 
 # Run Container With New Image
-docker run -d --name sign-gateway -p 1303:1303 -e API_URL=https://api.xignature.co.id -e API_KEY=your-api-key -e ENV=PROD registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
+docker run -d --name sign-gateway -p 1303:1303 -e API_URL=https://api.xignature.co.id -e API_KEY=your-api-key -e ENV=PROD -e OTEL_SERVICE_NAME=xignature-prod registry.xignature.co.id/xignature/public-sign-gateway:2.1.0
 ```
