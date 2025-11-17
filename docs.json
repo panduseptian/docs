@@ -36,17 +36,6 @@
             ]
           },
           {
-            "group": "Hash Sign",
-            "pages": [
-              "api-reference/endpoint/sign/hash",
-              "api-reference/endpoint/sign/hash_ent"
-            ]
-          },
-          {
-            "group": "Certificate",
-            "pages": ["api-reference/endpoint/certificate/active"]
-          },
-          {
             "group": "Emeterai",
             "pages": [
               "api-reference/endpoint/emeterai/generate",
